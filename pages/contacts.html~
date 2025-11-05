@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../primeicons.css">
     <script src="../tailwind.js"></script>
+    <script
+            src="../ymaps.js"
+            type="text/javascript"
+    ></script>
     <link rel="stylesheet" href="../toastr.min.css">
 </head>
 <body>
@@ -74,96 +79,114 @@
         <button class="w-36 h-9 bg-[#3862e6] font-bold text-white hover:bg-[#1447e6] transition-colors rounded-lg text-sm" onclick="openModalCallback()">Заказать звонок</button>
     </div>
 </header>
-<main class="bg-gray-100 p-10">
-    <h1 class="text-2xl font-bold text-center">Новости и статьи</h1>
-    <p class="text-gray-700 w-2/5 max-[600px]:w-full text-center m-auto mb-5">Следите за новостями компании и читайте полезные статьи о логистике и грузоперевозках</p>
-    <div class="flex flex-wrap gap-4 px-52 justify-center items-center">
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_1.jpg" alt="news">
+<main class="bg-gray-100 pb-10">
+    <h1 class="text-2xl font-bold text-center p-5">Контакты</h1>
+    <p class="text-gray-700 w-2/5 text-center m-auto mb-5 max-[600px]:w-full">Свяжитесь с нами удобным для вас способом. Мы всегда готовы ответить на ваши вопросы.</p>
+    <div class="flex items-start gap-8 px-52 py-10 max-[900px]:flex-col">
+        <form class="w-[calc(50%_-_1rem)] max-[900px]:w-full p-8 rounded-xl border-1 border-gray-300 flex flex-col gap-6 bg-white" onsubmit="submitForm(event)">
+            <p class="mb-4">Форма обратной связи</p>
+            <div class="flex flex-col gap-1 w-full">
+                <label for="name" class="text-sm font-semibold">Ваше имя *</label>
+                <input required type="text" id="name" placeholder="Введите ваше имя" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
             </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-[#155dfc] text-white text-xs font-bold rounded-xl px-3">Новости компании</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 15 октября 2025</p>
+            <div class="flex flex-col gap-1 w-full">
+                <label for="email" class="text-sm font-semibold">Email *</label>
+                <input required type="email" id="email" placeholder="Введите ваш email" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+                <label for="phone" class="text-sm font-semibold">Телефон</label>
+                <input type="text" id="phone" placeholder="Введите ваш телефон" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+                <label for="theme" class="text-sm font-semibold">Тема обращения *</label>
+                <input required type="text" id="theme" placeholder="Введите тему обращения" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+            </div>
+            <div class="flex flex-col gap-1 w-full">
+                <label for="message" class="text-sm font-semibold">Сообщение *</label>
+                <textarea required id="message" placeholder="Введите ваше сообщение" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea>
+            </div>
+            <button class="w-full hover:bg-[#1447e6] bg-[#3862e6] text-white font-bold rounded-lg text-sm h-10 block transition-colors">Отправить сообщение</button>
+        </form>
+        <div class="flex flex-col gap-8 w-[calc(50%_-_1rem)] max-[900px]:w-full">
+            <div class="flex gap-4 p-6 border-1 border-gray-300 rounded-xl w-full bg-white">
+                <span class="size-12 flex justify-center items-center rounded-xl bg-[#dbeafe]"><i class="pi pi-clock text-[#4f86fd] text-2xl"></i></span>
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold">Режим работы</p>
+                    <p class="text-gray-600">Круглосуточно, 24/7 <br/> Без выходных и праздников</p>
                 </div>
-                <p>Расширение автопарка: новые рефрижераторы</p>
-                <p class="text-gray-500 text-sm">В нашем автопарке появились 50 новых рефрижераторов для перевозки скоропортящихся грузов с улучшенной системой контроля температуры.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+            </div>
+            <div class="flex gap-4 p-6 border-1 border-gray-300 rounded-xl w-full bg-white">
+                <span class="size-12 flex justify-center items-center rounded-xl bg-[#dbeafe]"><i class="pi pi-phone text-[#4f86fd] text-2xl"></i></span>
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold">Телефоны</p>
+                    <p class="text-gray-600">+7 (495) 123-45-67 (Москва)<br/> +7 (812) 987-65-43 (СПб) <br/> 8 800 555-12-34 (Бесплатно)</p>
+                </div>
+            </div>
+            <div class="flex gap-4 p-6 border-1 border-gray-300 rounded-xl w-full bg-white">
+                <span class="size-12 flex justify-center items-center rounded-xl bg-[#dbeafe]"><i class="pi pi-envelope text-[#4f86fd] text-2xl"></i></span>
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold">Email</p>
+                    <p class="text-gray-600">info@logistic.ru<br/> sales@logistic.ru <br/> support@logistic.ru</p>
+                </div>
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_2.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between min-[1200px]:h-[220px]">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-[#155dfc] text-white text-xs font-bold rounded-xl px-3">Новости компании</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 10 октября 2025</p>
+    </div>
+    <h2 class="text-lg font-bold text-center">Наши офисы</h2>
+    <div class="flex gap-6 my-6 px-52 max">
+        <div class="flex flex-col p-6 border-1 border-gray-300 rounded-xl w-full bg-white">
+            <h4 class="mb-4">Москва</h4>
+            <div class="flex flex-col gap-1 text-sm text-slate-600">
+                <div class="flex items-start gap-2">
+                    <i class="text-sm text-blue-600 pi pi-map-marker"></i>
+                    <span>Новопеределкинская ул., д. 14кА</span>
                 </div>
-                <p>Открытие нового логистического центра в Казани</p>
-                <p class="text-gray-500 text-sm">Мы рады сообщить об открытии современного логистического центра в Казани площадью 15 000 кв.м.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <div class="flex items-center gap-2">
+                    <i class="text-sm text-blue-600 pi pi-phone"></i>
+                    <span>+7 (495) 123-45-67</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="text-sm text-blue-600 pi pi-envelope"></i>
+                    <span>moscow@logistic.ru</span>
+                </div>
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_3.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-gray-200 text-black text-xs font-bold rounded-xl px-3">Статьи</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 5 октября 2025</p>
+        <div class="flex flex-col p-6 border-1 border-gray-300 rounded-xl w-full bg-white">
+            <h4 class="mb-4">Санкт-Петербург</h4>
+            <div class="flex flex-col gap-1 text-sm text-slate-600">
+                <div class="flex items-start gap-2">
+                    <i class="text-sm text-blue-600 pi pi-map-marker"></i>
+                    <span>пр. Невский, д. 89, офис 12</span>
                 </div>
-                <p>Как выбрать транспорт для перевозки груза</p>
-                <p class="text-gray-500 text-sm">Подробное руководство по выбору оптимального вида транспорта в зависимости от типа груза, расстояния и срочности доставки.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <div class="flex items-center gap-2">
+                    <i class="text-sm text-blue-600 pi pi-phone"></i>
+                    <span>+7 (812) 987-65-43</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="text-sm text-blue-600 pi pi-envelope"></i>
+                    <span>spb@logistic.ru</span>
+                </div>
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_4.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-gray-200 text-black text-xs font-bold rounded-xl px-3">Статьи</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 1 октября 2025</p>
+        <div class="flex flex-col p-6 border-1 border-gray-300 rounded-xl w-full bg-white">
+            <h4 class="mb-4">Казань</h4>
+            <div class="flex flex-col gap-1 text-sm text-slate-600">
+                <div class="flex items-start gap-2">
+                    <i class="text-sm text-blue-600 pi pi-map-marker"></i>
+                    <span>ул. Баумана, д. 45, офис 7</span>
                 </div>
-                <p>Новые правила таможенного оформления в 2025</p>
-                <p class="text-gray-500 text-sm">Обзор ключевых изменений в таможенном законодательстве и их влияние на процесс международных перевозок.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <div class="flex items-center gap-2">
+                    <i class="text-sm text-blue-600 pi pi-phone"></i>
+                    <span>+7 (843) 555-12-34</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="text-sm text-blue-600 pi pi-envelope"></i>
+                    <span>kazan@logistic.ru</span>
+                </div>
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/about_us.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-[#155dfc] text-white text-xs font-bold rounded-xl px-3">Новости компании</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 25 сентября 2025</p>
-                </div>
-                <p>ЛогистикПро получила сертификат ISO 9001:2015</p>
-                <p class="text-gray-500 text-sm">Успешно пройдена сертификация системы менеджмента качества по международному стандарту ISO 9001:2015.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
-            </div>
-        </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 overflow-hidden rounded-tr-xl rounded-tl-xl">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_5.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-gray-200 text-black text-xs font-bold rounded-xl px-3">Статьи</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 20 сентября 2025</p>
-                </div>
-                <p>Топ-5 ошибок при упаковке груза</p>
-                <p class="text-gray-500 text-sm">Разбираем самые распространенные ошибки при упаковке грузов и объясняем, как их избежать.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
-            </div>
-        </div>
-        <button class="border-1 border-gray-300 rounded-lg bg-white text-black hover:bg-gray-200 transition-colors px-4 py-2 text-sm w-fit self-center">Показать больше статей</button>
-
+    </div>
+    <div class="w-full px-52 h-96">
+        <div class="w-full h-full rounded-lg" id="map"></div>
     </div>
 </main>
 <footer class="bg-[#0f172b] text-white px-52 py-10 flex items-start justify-between">
@@ -202,6 +225,29 @@
 </footer>
 <script src="../jquery.js"></script>
 <script src="../toastr.js" type="text/javascript"></script>
+<script>
+    ymaps.ready(init);
+    function init() {
+        const map = new ymaps.Map(
+            'map',
+            {
+                center: [55.641895, 37.365325],
+                zoom: 18
+            }
+        );
+        map.geoObjects.add(new ymaps.Placemark([55.641895, 37.365325], {
+            preset: 'islands#icon',
+            iconColor: '#FC1515FF',
+            iconCaption:
+                "Офис в Москве",
+        }))
+    }
+
+    function submitForm(e) {
+        e.preventDefault();
+        toastr.success('Сообщение отправлено');
+    }
+</script>
 <script>
     function submitFormCallback(e) {
         e.preventDefault();

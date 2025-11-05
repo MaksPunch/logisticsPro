@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../primeicons.css">
     <script src="../tailwind.js"></script>
@@ -74,97 +75,78 @@
         <button class="w-36 h-9 bg-[#3862e6] font-bold text-white hover:bg-[#1447e6] transition-colors rounded-lg text-sm" onclick="openModalCallback()">Заказать звонок</button>
     </div>
 </header>
-<main class="bg-gray-100 p-10">
-    <h1 class="text-2xl font-bold text-center">Новости и статьи</h1>
-    <p class="text-gray-700 w-2/5 max-[600px]:w-full text-center m-auto mb-5">Следите за новостями компании и читайте полезные статьи о логистике и грузоперевозках</p>
-    <div class="flex flex-wrap gap-4 px-52 justify-center items-center">
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_1.jpg" alt="news">
+<main class="bg-gray-100 py-10 max-[900px]:px-10">
+    <span class="size-14 flex justify-center items-center rounded-full block mx-auto bg-[#dbeafe]"><i
+            class="pi pi-calculator text-[#155dfc] text-2xl"></i></span>
+    <h1 class="text-lg text-center m-5">Калькулятор стоимости перевозки</h1>
+    <p class="text-gray-700 w-2/5 text-center m-auto mb-5">Рассчитайте предварительную стоимость доставки вашего груза</p>
+    <form class="border-gray-200 flex flex-col gap-5 p-8 w-1/2 mx-auto bg-white rounded border-gray-300 border-1 max-[900px]:w-full" id="form">
+        <div class="flex gap-4 items-center max-[500px]:flex-col">
+            <div class="flex flex-col gap-1 w-[calc(50%_-_0.5rem)] max-[500px]:w-full">
+                <label for="type" class="text-sm font-semibold">Тип груза</label>
+                <select required id="type" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                    <option value="0" selected>Выберите тип груза</option>
+                    <option value="base">Обычный груз</option>
+                    <option value="fast">Скоропортящийся груз</option>
+                    <option value="fragile">Хрупкий груз</option>
+                    <option value="dangerous">Опасный груз</option>
+                    <option value="oversized">Негабаритный груз</option>
+                </select>
             </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-[#155dfc] text-white text-xs font-bold rounded-xl px-3">Новости компании</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 15 октября 2025</p>
-                </div>
-                <p>Расширение автопарка: новые рефрижераторы</p>
-                <p class="text-gray-500 text-sm">В нашем автопарке появились 50 новых рефрижераторов для перевозки скоропортящихся грузов с улучшенной системой контроля температуры.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
-            </div>
-        </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_2.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between min-[1200px]:h-[220px]">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-[#155dfc] text-white text-xs font-bold rounded-xl px-3">Новости компании</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 10 октября 2025</p>
-                </div>
-                <p>Открытие нового логистического центра в Казани</p>
-                <p class="text-gray-500 text-sm">Мы рады сообщить об открытии современного логистического центра в Казани площадью 15 000 кв.м.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+            <div class="flex flex-col gap-1 w-[calc(50%_-_0.5rem)] max-[500px]:w-full">
+                <label for="weight" class="text-sm font-semibold">Вес груза, кг</label>
+                <input max="10000" required type="number" id="weight" placeholder="Введите вес груза" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_3.jpg" alt="news">
+        <div class="flex gap-4 items-center max-[500px]:flex-col">
+            <div class="flex flex-col gap-1 w-[calc(50%_-_0.5rem)] max-[500px]:w-full">
+                <label for="from" class="text-sm font-semibold">Откуда</label>
+                <input required type="text" id="from" placeholder="Город отправления" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
             </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-gray-200 text-black text-xs font-bold rounded-xl px-3">Статьи</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 5 октября 2025</p>
-                </div>
-                <p>Как выбрать транспорт для перевозки груза</p>
-                <p class="text-gray-500 text-sm">Подробное руководство по выбору оптимального вида транспорта в зависимости от типа груза, расстояния и срочности доставки.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+            <div class="flex flex-col gap-1 w-[calc(50%_-_0.5rem)] max-[500px]:w-full">
+                <label for="to" class="text-sm font-semibold">Куда</label>
+                <input required type="text" id="to" placeholder="Город назначения" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_4.jpg" alt="news">
+        <div class="flex flex-col gap-1 w-full mb-4">
+            <label for="transport" class="text-sm font-semibold">Вид транспорта</label>
+            <select required id="transport" class="block w-full rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
+                <option value="0" selected>Выберите вид транспорта</option>
+                <option value="automobile">Автомобильный</option>
+                <option value="railway">Железнодорожный</option>
+                <option value="avia">Авиа</option>
+                <option value="multimodal">Мультимодальный</option>
+            </select>
+        </div>
+        <hr class="border-gray-300">
+        <div class="flex flex-col gap-2 text-sm">
+            <b>Дополнительные услуги</b>
+            <div class="flex gap-2 items-center">
+                <input type="checkbox" class="rounded" id="insurance">
+                <label for="insurance" class="font-semibold">Страхование груза (+10% к стоимости)</label>
             </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-gray-200 text-black text-xs font-bold rounded-xl px-3">Статьи</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 1 октября 2025</p>
-                </div>
-                <p>Новые правила таможенного оформления в 2025</p>
-                <p class="text-gray-500 text-sm">Обзор ключевых изменений в таможенном законодательстве и их влияние на процесс международных перевозок.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+            <div class="flex gap-2 items-center">
+                <input type="checkbox" class="rounded" id="express">
+                <label for="express" class="font-semibold">Экспресс доставка (+30% к стоимости)</label>
+            </div>
+            <div class="flex gap-2 items-center">
+                <input type="checkbox" class="rounded" id="package">
+                <label for="package" class="font-semibold">Упаковка груза (+5000 ₽ к стоимости)</label>
             </div>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 rounded-tr-xl rounded-tl-xl overflow-hidden">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/about_us.jpg" alt="news">
+        <div class="flex flex-col gap-3 p-6 bg-[#eff6ff] border-1 border-gray-300 rounded-lg text-white hidden" id="price_container">
+            <div class="flex gap-3 text-[#3170fc] items-center">
+                <i class="pi pi-check-circle text-2xl"></i>
+                <p>Предварительная стоимость</p>
             </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-[#155dfc] text-white text-xs font-bold rounded-xl px-3">Новости компании</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 25 сентября 2025</p>
-                </div>
-                <p>ЛогистикПро получила сертификат ISO 9001:2015</p>
-                <p class="text-gray-500 text-sm">Успешно пройдена сертификация системы менеджмента качества по международному стандарту ISO 9001:2015.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
-            </div>
+            <p class="text-4xl text-[#3170fc]" id="price">0 ₽</p>
+            <p class="text-gray-500 text-sm">* Окончательная стоимость будет рассчитана менеджером с учетом всех параметров</p>
         </div>
-        <div class="w-[calc(33%_-_1rem)] max-[800px]:w-[calc(50%_-_1rem)] max-[600px]:w-full max-[600px]:h-full rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
-            <div class="w-full h-40 mb-2 overflow-hidden rounded-tr-xl rounded-tl-xl">
-                <img class="w-full h-full object-cover mb-2 rounded-tr-xl rounded-tl-xl hover:scale-111 transition-transform" src="../assets/news_5.jpg" alt="news">
-            </div>
-            <div class="p-6 flex flex-col gap-3 justify-between">
-                <div class="flex gap-3 items-center">
-                    <span class="p-1 bg-gray-200 text-black text-xs font-bold rounded-xl px-3">Статьи</span>
-                    <p class="text-gray-500 text-sm"><i class="pi pi-calendar"></i> 20 сентября 2025</p>
-                </div>
-                <p>Топ-5 ошибок при упаковке груза</p>
-                <p class="text-gray-500 text-sm">Разбираем самые распространенные ошибки при упаковке грузов и объясняем, как их избежать.</p>
-                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
-            </div>
+        <div class="flex gap-4">
+            <button class="w-56 hover:bg-[#1447e6] bg-[#3862e6] text-white font-bold rounded-lg text-sm h-10 block transition-colors">Рассчитать стоимость</button>
+            <button type="button" class="w-56 hover:bg-gray-100 bg-white border-1 border-gray-400 text-black font-bold rounded-lg text-sm h-10 block transition-colors">Отправить заявку</button>
         </div>
-        <button class="border-1 border-gray-300 rounded-lg bg-white text-black hover:bg-gray-200 transition-colors px-4 py-2 text-sm w-fit self-center">Показать больше статей</button>
-
-    </div>
+    </form>
 </main>
 <footer class="bg-[#0f172b] text-white px-52 py-10 flex items-start justify-between">
     <div class="w-1/4 flex flex-col gap-5">
@@ -228,6 +210,35 @@
             $('#modal_dialog_callback').removeClass('scale-50');
         }, 10)
     }
+</script>
+<script>
+    document.getElementById('form').addEventListener('submit', ((e) => {
+        e.preventDefault();
+        const type = document.getElementById('type').value;
+        const weight = document.getElementById('weight').value;
+        const transport = document.getElementById('transport').value;
+        const insurance = document.getElementById('insurance').checked;
+        const express = document.getElementById('express').checked;
+        const package = document.getElementById('package').checked;
+
+        let baseCost = weight * 100;
+        if (type === 'fast') baseCost = weight * 150;
+        if (type === 'fragile') baseCost = weight * 200;
+        if (type === 'dangerous') baseCost = weight * 300;
+        if (type === 'oversized') baseCost = weight * 250;
+
+        if (transport === 'automobile') baseCost *= 1.2;
+        if (transport === 'railway') baseCost *= 1.1;
+        if (transport === 'avia') baseCost *= 1.4;
+        if (transport === 'multimodal') baseCost *= 1.5
+
+        if (insurance) baseCost *= 1.1;
+        if (express) baseCost *= 1.3;
+        if (package) baseCost += 5000;
+
+        document.getElementById('price_container').classList.remove('hidden');
+        document.getElementById('price').innerText = Math.round(baseCost) + " ₽"
+    }));
 </script>
 </body>
 </html>

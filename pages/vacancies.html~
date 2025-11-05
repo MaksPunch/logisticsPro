@@ -94,7 +94,7 @@
                 Перевозки по всей России и СНГ</p>
         </div>
         <div class="flex items-center gap-3">
-            <a href="/index.html" class="hover:text-[#8db0fe] transition-colors">Главная</a>
+            <a href="/logisticsPro/" class="hover:text-[#8db0fe] transition-colors">Главная</a>
             <a href="/logisticsPro/pages/abous_us.html" class="hover:text-[#8db0fe] transition-colors">О компании</a>
             <a href="/logisticsPro/pages/services.html" class="hover:text-[#8db0fe] transition-colors">Услуги</a>
             <a href="/logisticsPro/pages/price_calculator.html" class="hover:text-[#8db0fe] transition-colors">Расчет стоимости</a>
@@ -109,7 +109,7 @@
     <h1 class="text-2xl font-bold text-center m-5">Вакансии</h1>
     <p class="text-gray-700 w-2/5 text-center m-auto mb-5">Присоединяйтесь к нашей команде профессионалов. Мы предлагаем стабильную работу, достойную заработную плату и возможности для развития.</p>
     <div class="flex gap-4 flex-wrap px-52 py-5">
-        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
+        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] max-[900px]:w-[calc(50%_-_1rem)] max-[700px]:w-full items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
             <p>Водитель-экспедитор категории CE</p>
             <div class="flex flex-col gap-2 text-sm text-gray-500">
                 <p ><i class="pi pi-map-marker"></i> Москва</p>
@@ -126,7 +126,7 @@
             </ul>
             <button class="bg-[#155dfc] text-white hover:bg-[#1447e6] transition-colors rounded-lg px-4 py-2 text-sm w-full cursor-pointer" onclick="openModal('Водитель-экспедитор категории CE')">Откликнуться</button>
         </div>
-        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
+        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] max-[900px]:w-[calc(50%_-_1rem)] max-[700px]:w-full items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
             <p>Менеджер по логистике</p>
             <div class="flex flex-col gap-2 text-sm text-gray-500">
                 <p ><i class="pi pi-map-marker"></i> Москва</p>
@@ -143,7 +143,7 @@
             </ul>
             <button class="bg-[#155dfc] text-white hover:bg-[#1447e6] transition-colors rounded-lg px-4 py-2 text-sm w-full cursor-pointer" onclick="openModal('Менеджер по логистике')">Откликнуться</button>
         </div>
-        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
+        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] max-[900px]:w-[calc(50%_-_1rem)] max-[700px]:w-full items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
             <p>Складской работник</p>
             <div class="flex flex-col gap-2 text-sm text-gray-500">
                 <p ><i class="pi pi-map-marker"></i> Санкт-Петербург</p>
@@ -160,7 +160,7 @@
             </ul>
             <button class="bg-[#155dfc] text-white hover:bg-[#1447e6] transition-colors rounded-lg px-4 py-2 text-sm w-full cursor-pointer" onclick="openModal('Складской работник')">Откликнуться</button>
         </div>
-        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
+        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] max-[900px]:w-[calc(50%_-_1rem)] max-[700px]:w-full items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
             <p>Специалист по таможенному оформлению</p>
             <div class="flex flex-col gap-2 text-sm text-gray-500">
                 <p ><i class="pi pi-map-marker"></i> Москва</p>
@@ -177,7 +177,7 @@
             </ul>
             <button class="bg-[#155dfc] text-white hover:bg-[#1447e6] transition-colors rounded-lg px-4 py-2 text-sm w-full cursor-pointer" onclick="openModal('Специалист по таможенному оформлению')">Откликнуться</button>
         </div>
-        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
+        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] max-[900px]:w-[calc(50%_-_1rem)] max-[700px]:w-full items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
             <p>Диспетчер грузоперевозок</p>
             <div class="flex flex-col gap-2 text-sm text-gray-500">
                 <p ><i class="pi pi-map-marker"></i> Москва</p>
@@ -194,7 +194,7 @@
             </ul>
             <button class="bg-[#155dfc] text-white hover:bg-[#1447e6] transition-colors rounded-lg px-4 py-2 text-sm w-full cursor-pointer" onclick="openModal('Диспетчер грузоперевозок')">Откликнуться</button>
         </div>
-        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
+        <div class="flex flex-col gap-5 w-[calc(33%_-_1rem)] max-[900px]:w-[calc(50%_-_1rem)] max-[700px]:w-full items-start rounded-xl border-1 border-gray-300 px-8 py-6 transition-shadow">
             <p>Водитель погрузчика</p>
             <div class="flex flex-col gap-2 text-sm text-gray-500">
                 <p ><i class="pi pi-map-marker"></i> Казань</p>

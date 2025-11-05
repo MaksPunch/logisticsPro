@@ -55,13 +55,7 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
-    #modal_dialog_callback, #modal_dialog {
+    #modal_dialog_callback {
         width: 50% !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #modal_dialog_callback, #modal_dialog {
-        width: 90% !important;
     }
 }

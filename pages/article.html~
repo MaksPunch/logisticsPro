@@ -77,7 +77,7 @@
 </header>
 <main>
     <div class="m-auto w-3/4 flex flex-col items-start py-10 px-52 gap-3 max-[800px]:w-full">
-        <div class="text-black flex items-center gap-2 max-[450px]:flex-wrap">
+        <div class="text-black flex items-center gap-2 max-[]flex-wrap">
             <a href="/logisticsPro/" class="hover:text-[#1576fd] font-bold transition-colors">Главная</a>
             <span>/</span>
             <a href="/logisticsPro/pages/news.html" class="hover:text-[#1576fd] font-bold transition-colors">Новости и статьи</a>
