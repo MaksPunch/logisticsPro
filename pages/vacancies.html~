@@ -94,7 +94,7 @@
                 Перевозки по всей России и СНГ</p>
         </div>
         <div class="flex items-center gap-3">
-            <a href="/logisticsPro/" class="hover:text-[#8db0fe] transition-colors">Главная</a>
+            <a href="/index.html" class="hover:text-[#8db0fe] transition-colors">Главная</a>
             <a href="/logisticsPro/pages/abous_us.html" class="hover:text-[#8db0fe] transition-colors">О компании</a>
             <a href="/logisticsPro/pages/services.html" class="hover:text-[#8db0fe] transition-colors">Услуги</a>
             <a href="/logisticsPro/pages/price_calculator.html" class="hover:text-[#8db0fe] transition-colors">Расчет стоимости</a>

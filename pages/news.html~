@@ -64,12 +64,12 @@
         </div>
         <div class="flex items-center gap-3">
             <a href="/index.html" class="hover:text-[#8db0fe] transition-colors">Главная</a>
-            <a href="/pages/abous_us.html" class="hover:text-[#8db0fe] transition-colors">О компании</a>
-            <a href="/pages/services.html" class="hover:text-[#8db0fe] transition-colors">Услуги</a>
-            <a href="/pages/price_calculator.html" class="hover:text-[#8db0fe] transition-colors">Расчет стоимости</a>
-            <a href="/pages/news.html" class="hover:text-[#8db0fe] transition-colors">Новости</a>
-            <a href="/pages/vacancies.html" class="hover:text-[#8db0fe] transition-colors">Вакансии</a>
-            <a href="/pages/contacts.html" class="hover:text-[#8db0fe] transition-colors">Контакты</a>
+            <a href="/logisticsPro/pages/abous_us.html" class="hover:text-[#8db0fe] transition-colors">О компании</a>
+            <a href="/logisticsPro/pages/services.html" class="hover:text-[#8db0fe] transition-colors">Услуги</a>
+            <a href="/logisticsPro/pages/price_calculator.html" class="hover:text-[#8db0fe] transition-colors">Расчет стоимости</a>
+            <a href="/logisticsPro/pages/news.html" class="hover:text-[#8db0fe] transition-colors">Новости</a>
+            <a href="/logisticsPro/pages/vacancies.html" class="hover:text-[#8db0fe] transition-colors">Вакансии</a>
+            <a href="/logisticsPro/pages/contacts.html" class="hover:text-[#8db0fe] transition-colors">Контакты</a>
         </div>
         <button class="w-36 h-9 bg-[#3862e6] font-bold text-white hover:bg-[#1447e6] transition-colors rounded-lg text-sm" onclick="openModalCallback()">Заказать звонок</button>
     </div>
@@ -89,7 +89,7 @@
                 </div>
                 <p>Расширение автопарка: новые рефрижераторы</p>
                 <p class="text-gray-500 text-sm">В нашем автопарке появились 50 новых рефрижераторов для перевозки скоропортящихся грузов с улучшенной системой контроля температуры.</p>
-                <a href="/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
             </div>
         </div>
         <div class="w-[calc(33%_-_1rem)] rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
@@ -103,7 +103,7 @@
                 </div>
                 <p>Открытие нового логистического центра в Казани</p>
                 <p class="text-gray-500 text-sm">Мы рады сообщить об открытии современного логистического центра в Казани площадью 15 000 кв.м.</p>
-                <a href="/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
             </div>
         </div>
         <div class="w-[calc(33%_-_1rem)] rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
@@ -117,7 +117,7 @@
                 </div>
                 <p>Как выбрать транспорт для перевозки груза</p>
                 <p class="text-gray-500 text-sm">Подробное руководство по выбору оптимального вида транспорта в зависимости от типа груза, расстояния и срочности доставки.</p>
-                <a href="/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
             </div>
         </div>
         <div class="w-[calc(33%_-_1rem)] rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
@@ -131,7 +131,7 @@
                 </div>
                 <p>Новые правила таможенного оформления в 2025</p>
                 <p class="text-gray-500 text-sm">Обзор ключевых изменений в таможенном законодательстве и их влияние на процесс международных перевозок.</p>
-                <a href="/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
             </div>
         </div>
         <div class="w-[calc(33%_-_1rem)] rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
@@ -145,7 +145,7 @@
                 </div>
                 <p>ЛогистикПро получила сертификат ISO 9001:2015</p>
                 <p class="text-gray-500 text-sm">Успешно пройдена сертификация системы менеджмента качества по международному стандарту ISO 9001:2015.</p>
-                <a href="/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
             </div>
         </div>
         <div class="w-[calc(33%_-_1rem)] rounded-xl  border-1 border-gray-300 hover:shadow-md transition-shadow">
@@ -159,7 +159,7 @@
                 </div>
                 <p>Топ-5 ошибок при упаковке груза</p>
                 <p class="text-gray-500 text-sm">Разбираем самые распространенные ошибки при упаковке грузов и объясняем, как их избежать.</p>
-                <a href="/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
+                <a href="/logisticsPro/pages/article.html" class="bg-transparent border-0 outline-0 py-1 px-3 text-sm text-[#155dfc] hover:text-[#1447e6] hover:bg-gray-200 rounded-lg w-fit group transition-colors">Читать далее <i class="pi pi-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></a>
             </div>
         </div>
         <button class="border-1 border-gray-300 rounded-lg bg-white text-black hover:bg-gray-200 transition-colors px-4 py-2 text-sm w-fit self-center">Показать больше статей</button>
@@ -179,11 +179,11 @@
     <div class="flex flex-col gap-5 w-1/4">
         <p>Услуги</p>
         <div class="flex gap-2 flex-col text-gray-400">
-            <a href="/pages/services.html" class="hover:text-white transition-colors">Автоперевозки</a>
-            <a href="/pages/services.html" class="hover:text-white transition-colors">Железнодорожные перевозки</a>
-            <a href="/pages/services.html" class="hover:text-white transition-colors">Складская логистика</a>
-            <a href="/pages/services.html" class="hover:text-white transition-colors">Экспедирование</a>
-            <a href="/pages/services.html" class="hover:text-white transition-colors">Таможенное оформление</a>
+            <a href="/logisticsPro/pages/services.html" class="hover:text-white transition-colors">Автоперевозки</a>
+            <a href="/logisticsPro/pages/services.html" class="hover:text-white transition-colors">Железнодорожные перевозки</a>
+            <a href="/logisticsPro/pages/services.html" class="hover:text-white transition-colors">Складская логистика</a>
+            <a href="/logisticsPro/pages/services.html" class="hover:text-white transition-colors">Экспедирование</a>
+            <a href="/logisticsPro/pages/services.html" class="hover:text-white transition-colors">Таможенное оформление</a>
         </div>
     </div>
     <div class="flex flex-col gap-5 w-1/4">
